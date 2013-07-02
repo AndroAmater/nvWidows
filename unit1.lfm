@@ -1,36 +1,29 @@
 object FormSettings: TFormSettings
-  Left = 588
+  Left = 782
   Height = 314
-  Top = 143
+  Top = 480
   Width = 378
   Caption = 'Settings'
   ClientHeight = 314
   ClientWidth = 378
+  OnCreate = FormCreate
   LCLVersion = '1.0.8.0'
   object PanelThemes: TPanel
     Left = 80
-    Height = 90
+    Height = 92
     Top = 200
     Width = 220
-    ClientHeight = 90
+    ClientHeight = 92
     ClientWidth = 220
     TabOrder = 0
-    object ToggleDark: TToggleBox
-      Left = 88
-      Height = 90
-      Top = 192
-      Width = 90
-      Caption = 'ToggleDark'
-      OnChange = ToggleDarkChange
-      TabOrder = 0
-    end
     object ToggleBox1: TToggleBox
       Left = 0
       Height = 90
       Top = 0
       Width = 90
       Caption = 'ToggleBox1'
-      TabOrder = 1
+      OnChange = ToggleBox1Change
+      TabOrder = 0
     end
     object ToggleBox2: TToggleBox
       Left = 130
@@ -38,7 +31,7 @@ object FormSettings: TFormSettings
       Top = 0
       Width = 90
       Caption = 'ToggleBox2'
-      TabOrder = 2
+      TabOrder = 1
     end
   end
 end

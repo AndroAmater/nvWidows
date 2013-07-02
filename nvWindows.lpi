@@ -35,7 +35,7 @@
         <PackageName Value="LCL"/>
       </Item1>
     </RequiredPackages>
-    <Units Count="3">
+    <Units Count="4">
       <Unit0>
         <Filename Value="nvWindows.lpr"/>
         <IsPartOfProject Value="True"/>
@@ -47,15 +47,24 @@
         <ComponentName Value="FormMain"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <UnitName Value="MainForm"/>
+        <UnitName Value="MainFrm"/>
       </Unit1>
       <Unit2>
         <Filename Value="unit1.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="FormSettings"/>
+        <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="Unit1"/>
       </Unit2>
+      <Unit3>
+        <Filename Value="formeditor.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FormDFEditor"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="FormEditor"/>
+      </Unit3>
     </Units>
   </ProjectOptions>
   <CompilerOptions>
