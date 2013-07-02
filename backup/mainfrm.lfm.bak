@@ -1,7 +1,7 @@
 object FormMain: TFormMain
-  Left = 457
+  Left = 227
   Height = 320
-  Top = 224
+  Top = 111
   Width = 500
   Caption = 'nvWindows'
   ClientHeight = 320
@@ -79,5 +79,11 @@ object FormMain: TFormMain
         OnClick = OpenEditorClick
       end
     end
+  end
+  object Timer1: TTimer
+    Interval = 1
+    OnTimer = Timer1Timer
+    left = 40
+    top = 17
   end
 end

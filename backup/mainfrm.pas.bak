@@ -22,12 +22,14 @@ type
     SettingsButton: TButton;
     SearchButton: TButton;
     SearchEdit: TEdit;
+    Timer1: TTimer;
     ToolBarMain: TToolBar;
     procedure Action1Execute(Sender: TObject);
     procedure FileInEditorClick(Sender: TObject);
     procedure FileMenuClick(Sender: TObject);
     procedure OpenEditorClick(Sender: TObject);
     procedure SettingsButtonClick(Sender: TObject);
+    procedure Timer1Timer(Sender: TObject);
   private
     { private declarations }
   public
@@ -63,12 +65,17 @@ end;
 
 procedure TFormMain.OpenEditorClick(Sender: TObject);
 begin
-  FormEditor.Show;
+  FormDFEditor.Show;
 end;
 
 procedure TFormMain.SettingsButtonClick(Sender: TObject);
 begin
   FormSettings.Show;
+end;
+
+procedure TFormMain.Timer1Timer(Sender: TObject);
+begin
+
 end;
 
 

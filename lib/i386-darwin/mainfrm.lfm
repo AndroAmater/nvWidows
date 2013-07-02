@@ -1,7 +1,7 @@
 object FormMain: TFormMain
-  Left = 457
+  Left = 625
   Height = 320
-  Top = 224
+  Top = 209
   Width = 500
   Caption = 'nvWindows'
   ClientHeight = 320
@@ -39,34 +39,24 @@ object FormMain: TFormMain
       TabOrder = 0
     end
   end
-  object Panel1: TPanel
-    Left = 128
-    Height = 295
-    Top = 25
-    Width = 370
-    Caption = 'Panel1'
-    ClientHeight = 295
-    ClientWidth = 370
-    TabOrder = 1
-    object Memo1: TMemo
-      Left = 2
-      Height = 295
-      Top = 2
-      Width = 375
-      Lines.Strings = (
-        'Memo1'
-      )
-      TabOrder = 0
-    end
-  end
   object ListBox1: TListBox
     Left = 0
     Height = 298
     Top = 26
     Width = 130
     ItemHeight = 0
-    TabOrder = 2
+    TabOrder = 1
     Visible = False
+  end
+  object Memo1: TMemo
+    Left = 131
+    Height = 295
+    Top = 26
+    Width = 369
+    Lines.Strings = (
+      'Memo1'
+    )
+    TabOrder = 2
   end
   object MainMenu1: TMainMenu
     left = 12
@@ -79,5 +69,11 @@ object FormMain: TFormMain
         OnClick = OpenEditorClick
       end
     end
+  end
+  object Timer1: TTimer
+    Interval = 1
+    OnTimer = Timer1Timer
+    left = 40
+    top = 17
   end
 end

@@ -6,10 +6,8 @@ object FormSettings: TFormSettings
   Caption = 'Settings'
   ClientHeight = 314
   ClientWidth = 378
-  Menu = MainMenu2
   OnCreate = FormCreate
   LCLVersion = '1.0.8.0'
-  Visible = True
   object PanelThemes: TPanel
     Left = 80
     Height = 92
@@ -34,13 +32,6 @@ object FormSettings: TFormSettings
       Width = 90
       Caption = 'ToggleBox2'
       TabOrder = 1
-    end
-  end
-  object MainMenu2: TMainMenu
-    left = 302
-    top = 41
-    object MenuItem1: TMenuItem
-      Caption = 'New Item1'
     end
   end
 end

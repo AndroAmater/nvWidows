@@ -13,8 +13,6 @@ type
   { TFormSettings }
 
   TFormSettings = class(TForm)
-    MainMenu2: TMainMenu;
-    MenuItem1: TMenuItem;
     PanelThemes: TPanel;
     ToggleBox1: TToggleBox;
     ToggleBox2: TToggleBox;

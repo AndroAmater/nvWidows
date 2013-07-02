@@ -22,12 +22,14 @@ type
     SettingsButton: TButton;
     SearchButton: TButton;
     SearchEdit: TEdit;
+    Timer1: TTimer;
     ToolBarMain: TToolBar;
     procedure Action1Execute(Sender: TObject);
     procedure FileInEditorClick(Sender: TObject);
     procedure FileMenuClick(Sender: TObject);
     procedure OpenEditorClick(Sender: TObject);
     procedure SettingsButtonClick(Sender: TObject);
+    procedure Timer1Timer(Sender: TObject);
   private
     { private declarations }
   public
@@ -69,6 +71,34 @@ end;
 procedure TFormMain.SettingsButtonClick(Sender: TObject);
 begin
   FormSettings.Show;
+end;
+
+procedure TFormMain.Timer1Timer(Sender: TObject);
+begin
+  if FormMain.Width < 500 then
+    FormMain.Width:=500;
+  if FormMain.Height < 320 then
+     FormMain.Height:=320;
+
+  if ListBox1.Height < FormMain.Height - 26 then
+    ListBox1.Height:=FormMain.Height - 26
+  else if ListBox1.Height > FormMain.Height - 26 then
+    ListBox1.Height:=FormMain.Height - 26;
+
+  if Memo1.Width < FormMain.Width - 131 then
+    Memo1.Width:=FormMain.Width - 131
+  else if Memo1.Width > FormMain.Width - 131 then
+    Memo1.Width:=FormMain.Width - 131;
+
+  if Memo1.Height < FormMain.Height - 26 then
+    Memo1.Height:=FormMain.Height - 26
+  else if Memo1.Height > FormMain.Height - 26 then
+    Memo1.Height:=FormMain.Height - 26;
+
+  if SearchEdit.Width < FormMain.Width - 76 * 2 then
+    SearchEdit.Width:=FormMain.Width - 76 * 2
+  else if SearchEdit.Width > FormMain.Width - 76 * 2 then
+    SearchEdit.Width:=FormMain.Width - 76 * 2;
 end;
 
 
