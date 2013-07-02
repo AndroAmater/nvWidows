@@ -10,9 +10,9 @@ uses
 
 type
 
-  { TFormSettigs }
+  { TFormSettings }
 
-  TFormSettigs = class(TForm)
+  TFormSettings = class(TForm)
     PanelThemes: TPanel;
     ToggleBox1: TToggleBox;
     ToggleBox2: TToggleBox;
@@ -25,15 +25,15 @@ type
   end;
 
 var
-  FormSettigs: TFormSettigs;
+  FormSettings: TFormSettings;
 
 implementation
 
 {$R *.lfm}
 
-{ TFormSettigs }
+{ TFormSettings }
 
-procedure TFormSettigs.ToggleDarkChange(Sender: TObject);
+procedure TFormSettings.ToggleDarkChange(Sender: TObject);
 begin
 
 end;
