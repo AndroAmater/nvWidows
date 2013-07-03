@@ -1,7 +1,7 @@
 object FormDFEditor: TFormDFEditor
-  Left = 793
+  Left = 696
   Height = 503
-  Top = 335
+  Top = 173
   Width = 624
   Caption = 'Editor'
   ClientHeight = 503
